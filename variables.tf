@@ -8,3 +8,8 @@ variable "nbgroup" {
   default = "1"
 }
 
+variable "role_vpc_flow_log" {
+  type    = string
+  default = "role_vpc_fl"
+}
+
