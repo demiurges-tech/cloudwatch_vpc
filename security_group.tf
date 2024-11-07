@@ -33,3 +33,12 @@ resource "aws_vpc_security_group_ingress_rule" "allow_tls_https" {
   to_port           = 443
 }
 
+resource "aws_security_group_rule" "egress_all" {
+  security_group_id = aws_security_group.security_group_admin.id
+  type              = "egress"
+  from_port         = 0
+  to_port           = 0
+  protocol          = "-1"
+  cidr_blocks       = ["0.0.0.0/0"]
+
+}

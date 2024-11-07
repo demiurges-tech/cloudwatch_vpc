@@ -1,5 +1,4 @@
 resource "aws_instance" "ec2" {
-
   availability_zone      = data.aws_availability_zones.available.names[0]
   subnet_id              = aws_subnet.subnet_pub.id
   vpc_security_group_ids = ["${aws_security_group.security_group_admin.id}"]
@@ -12,6 +11,6 @@ resource "aws_instance" "ec2" {
     Name = "Group${var.nbgroup}_EC2"
 
   }
-
+  user_data = file("${path.module}/script.sh")
 }
 

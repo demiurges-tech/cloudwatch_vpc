@@ -13,3 +13,12 @@ variable "role_vpc_flow_log" {
   default = "role_vpc_fl"
 }
 
+variable "role_ec2" {
+  type    = string
+  default = "esgi_EC2_Role"
+}
+
+variable "mail_alert" {
+  type = string
+}
+

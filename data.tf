@@ -4,6 +4,9 @@ data "aws_iam_role" "arn_log_iam" {
   name = var.role_vpc_flow_log
 }
 
+data "aws_iam_role" "arn_ec2_iam" {
+  name = var.role_ec2
+}
 data "aws_ami" "image" {
   most_recent = true
 
