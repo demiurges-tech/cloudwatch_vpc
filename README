@@ -1,4 +1,4 @@
-# AWS Monitoring Setup with Terraform
+# AWS Monitoring Setup with Terraform#
 
 ## Description
 Ce projet configure la surveillance d'un réseau AWS avec Terraform. Il crée un environnement comprenant un VPC, un sous-réseau public, une instance EC2, et met en place des métriques de surveillance et des alertes pour le trafic réseau.
